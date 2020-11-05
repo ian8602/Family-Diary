@@ -10,23 +10,81 @@
 
   gtag('config', 'G-W3RX1SZVX1');
   </script>
-  <title>Programming</title>
+  <title>Family Diary</title>
   <meta charset="utf-8">
+  <style>
+    body {
+      margin:15px;
+    }
+    /*
+    img {
+      width:100%;
+    }
+    */
+    a {
+      color:black;
+      text-decoration: none;
+    }
+    .born {
+      color:red;
+    }
+    #Jaden {
+      color:blue;
+    }
+    h1 {
+      border-bottom:2px solid gray;
+      /* display:block; */
+      padding:15px;
+      margin:0px;
+      font-size:40px;
+      text-align:center;
+    }
+    #first {
+      border-right:2px solid gray;
+      width:100px;
+      margin:0;
+      padding:25px;
+      padding-left:40px;
+    }
+    #grid{
+      display:grid;
+      grid-template-columns:200px 1fr;
+    }
+  </style>
 </head>
 <body>
-  <h2>Programming</h2>
-  <strong><a href="https://en.wikipedia.org/wiki/Computer_programming" target="_blank" title="Computer Programming Specification">programming</a> is a tool</strong> for me to keep having a dream.
-  <p>I don't want to think a lot.<br>I just want to learn as much as I can for now.
-  <img src="stay hungry stay foolish.jpg" width="80%">
-  </p><p style="margin-top:30px;">What will be the next job I have? Who knows?</p>
-  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-  <h3>Three Goals for Programming</h3>
-  <ul>
-    <li>Global Admin Mainteance</li>
-    <li>Trading Program</li>
-    <li>Making an App</li>
-  </ul>
-  
+  <h1><a href="index.html">Our Memories</a></h1>
+  <div id="grid">
+    <ul id="first">
+      <li><a href="2014.html" style="color:green;text-decoration:underline">2014</a></li>
+      <li><a href="2015.html" class="born" id="Jaden">2015</a></li>
+      <li><a href="2016.html">2016</a></li>
+      <li><a href="2017.html">2017</a></li>
+      <li><a href="2018.html">2018</a></li>
+      <li><a href="2019.html" class="born">2019</a></li>
+      <li><a href="2020.html">2020</a></li>
+    </ul>
+    <div>
+      <h2>2020 - Eager to Change </h2>
+      <p>
+        <img src="Eager_to_change.jpg" alt="Eager to Change" width=30%>
+      </p>
+      <ul>
+        <li>2020_01</li>
+        <li>2020_02</li>
+        <li>2020_03</li>
+        <li>2020_04</li>
+        <li>2020_05</li>
+        <li>2020_06</li>
+        <li>2020_07</li>
+        <li>2020_08</li>
+        <li>2020_09</li>
+        <li>2020_10</li>
+        <li>2020_11</li>
+        <li>2020_12</li>
+      </ul>
+    </div>
+  </div>
   <!--
   <p>
     <div id="disqus_thread"></div>
@@ -64,6 +122,6 @@
   })();
   </script>
   <!--End of Tawk.to Script-->
-  
+
 </body>
 </html>
