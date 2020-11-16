@@ -21,15 +21,31 @@
       width:100%;
     }
     */
+    .button {
+      background-color:#F39C12; /* Green */
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      display: inline;
+      font-size: 18px;
+      margin: 4px 0px;
+      cursor: pointer;
+      }
+    .button2 {background-color: #555555;
+      display: inline;
+      } /* Blue */
     a {
       color:black;
       text-decoration: none;
     }
     .born {
-      color:red;
+      color:#F1C40F;
     }
     #Jaden {
       color:blue;
+    }
+    #eCredible {
+      color:#0099CC;
     }
     h1 {
       border-bottom:2px solid gray;
@@ -39,7 +55,8 @@
       font-size:40px;
       text-align:center;
     }
-    #first {
+    #Annual {
+      font-size:28px;
       border-right:2px solid gray;
       width:100px;
       margin:0;
@@ -50,38 +67,58 @@
       display:grid;
       grid-template-columns:200px 1fr;
     }
+    #Quarter{
+      display:grid;
+      grid-template-columns:1fr 1fr 1fr 1fr;
+    }
   </style>
 </head>
 <body>
-  <h1><a href="index.html">Our Memories</a></h1>
+  <h1><a href="index.html" style="color:#6C3483">Our Memories</a></h1>
   <div id="grid">
-    <ul id="first">
-      <li><a href="2014.html" style="color:green;text-decoration:underline">2014</a></li>
+    <ul style=font-weight:bold; id="Annual">
+      <li><a href="2014.html" style="color:green;text-decoration:underline;">2014</a></li>
       <li><a href="2015.html" class="born" id="Jaden">2015</a></li>
-      <li><a href="2016.html">2016</a></li>
-      <li><a href="2017.html">2017</a></li>
-      <li><a href="2018.html">2018</a></li>
+      <li><a href="2016.html" id="eCredible">2016</a></li>
+      <li><a href="2017.html" style="color:red">2017</a></li>
+      <li><a href="2018.html" style="color:#58D68D">2018</a></li>
       <li><a href="2019.html" class="born">2019</a></li>
-      <li><a href="2020.html">2020</a></li>
+      <li><a href="2020.html" style="color:#8E44AD">2020</a></li>
+      <input type="button" value="Day" class="button" onclick="
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';
+        " style=margin-top:30px;>
+      <input type="button" value="Night" class="button button2" onclick="
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='white';
+        ">
     </ul>
     <div>
       <h2>2020 - Eager to Change </h2>
       <p>
         <img src="Eager_to_change.jpg" alt="Eager to Change" width=30%>
       </p>
-      <ul>
-        <li>2020_01</li>
-        <li>2020_02</li>
-        <li>2020_03</li>
-        <li>2020_04</li>
-        <li>2020_05</li>
-        <li>2020_06</li>
-        <li>2020_07</li>
-        <li>2020_08</li>
-        <li>2020_09</li>
-        <li>2020_10</li>
-        <li>2020_11</li>
-        <li>2020_12</li>
+        <ul style=font-size:20px;font-weight:bold; id="Quarter">
+          <div>
+            <li>2020_01</li>
+            <li>2020_02</li>
+            <li>2020_03</li>
+          </div>
+          <div>
+            <li>2020_04</li>
+            <li>2020_05</li>
+            <li>2020_06</li>
+          </div>
+          <div>
+            <li>2020_07</li>
+            <li>2020_08</li>
+            <li>2020_09</li>
+          </div>
+          <div>
+            <li>2020_10</li>
+            <li>2020_11</li>
+            <li>2020_12</li>
+          </div>
       </ul>
     </div>
   </div>
