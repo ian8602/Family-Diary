@@ -21,6 +21,18 @@
       width:100%;
     }
     */
+    .container {
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+    .1Q {
+      background: #a5d6a7;
+    }
+    .2Q {
+      background: #FFDAB9;
+    }
     .button {
       background-color:#F39C12; /* Green */
       border: none;
@@ -32,7 +44,6 @@
       cursor: pointer;
       }
     .button2 {background-color: #555555;
-      display: inline;
       } /* Blue */
     a {
       color:black;
@@ -98,30 +109,31 @@
       <p>
         <img src="Eager_to_change.jpg" alt="Eager to Change" width=30%>
       </p>
-        <ul style=font-size:20px;font-weight:bold; id="Quarter">
-          <div>
+        <ul class="container" style=font-size:20px;font-weight:bold; id="Quarter">
+          <div class="1Q">
             <li>2020_01</li>
             <li>2020_02</li>
             <li>2020_03</li>
           </div>
-          <div>
+          <div class="2Q">
             <li>2020_04</li>
             <li>2020_05</li>
             <li>2020_06</li>
           </div>
-          <div>
+          <div class="3Q">
             <li>2020_07</li>
             <li>2020_08</li>
             <li>2020_09</li>
           </div>
-          <div>
+          <div class="4Q">
             <li>2020_10</li>
             <li>2020_11</li>
             <li>2020_12</li>
           </div>
-      </ul>
+        </ul>
+      </div>
     </div>
-  </div>
+
   <!--
   <p>
     <div id="disqus_thread"></div>
