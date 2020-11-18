@@ -22,16 +22,33 @@
     }
     */
     .container {
-      height: 100%;
+      background: beige;
+      height: 30%;
       display: flex;
       flex-direction: row;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center; baseline;
     }
-    .1Q {
-      background: #a5d6a7;
+    .item {
+      width: 60px;
+      height: 38px;
+      padding: 10px;
     }
-    .2Q {
+    .item1 {
+      background: #ef9a9a;
+    }
+    .item2 {
+      background: #ce93d8;
+    }
+    .item3 {
+      background: #90caf9;
+    }
+    .item4 {
       background: #FFDAB9;
+    }
+    .item5 {
+      background: #a5d6a7;
     }
     .button {
       background-color:#F39C12; /* Green */
@@ -109,28 +126,44 @@
       <p>
         <img src="Eager_to_change.jpg" alt="Eager to Change" width=30%>
       </p>
+      <!--
         <ul class="container" style=font-size:20px;font-weight:bold; id="Quarter">
-          <div class="1Q">
-            <li>2020_01</li>
-            <li>2020_02</li>
-            <li>2020_03</li>
+          <div class="FirstQuarter">
+            <p>2020_01</p>
+            <p>2020_02</p>
+            <p>2020_03</p>
           </div>
-          <div class="2Q">
-            <li>2020_04</li>
-            <li>2020_05</li>
-            <li>2020_06</li>
+          <div class="SecondQuarter">
+            <p>2020_04</p>
+            <p>2020_05</p>
+            <p>2020_06</p>
           </div>
-          <div class="3Q">
-            <li>2020_07</li>
+          <div class="ThirdQuarter">
+            <p>2020_07</p>
             <li>2020_08</li>
             <li>2020_09</li>
           </div>
-          <div class="4Q">
+          <div class="FourthQuarter">
             <li>2020_10</li>
             <li>2020_11</li>
             <li>2020_12</li>
           </div>
         </ul>
+      -->
+        <div class="container" style=font-size:20px;font-weight:bold;>
+          <div class="item item1">Jan.</div>
+          <div class="item item2">Feb.</div>
+          <div class="item item3">Mar.</div>
+          <div class="item item4">Apr.</div>
+          <div class="item item5">May</div>
+          <div class="item item6">Jun.</div>
+          <div class="item item7">Jul.</div>
+          <div class="item item8">Aug.</div>
+          <div class="item item9">Sep.</div>
+          <div class="item item10">Oct.</div>
+          <div class="item item11">Nov.</div>
+          <div class="item item12">Dec.</div>
+        </div>
       </div>
     </div>
 
@@ -147,7 +180,7 @@
     this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     */
-    (function() { // DON'T EDIT BELOW THIS LINE
+    (function() { // DON'T EDIT BELOW THIS pNE
     var d = document, s = d.createElement('script');
     s.src = 'https://family-diary-1.disqus.com/embed.js';
     s.setAttribute('data-timestamp', +new Date());
